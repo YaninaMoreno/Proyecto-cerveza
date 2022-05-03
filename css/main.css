@@ -234,21 +234,22 @@
     text-align: center; } }
 
 /*home*/
+body {
+  background-color: #43524f; }
+  body header nav {
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #b1c7c3;
+    display: inline-block; }
+  body header ul {
+    list-style: none; }
+    body header ul li {
+      display: inline-block;
+      padding: 5px;
+      margin: 5px; }
+
 @media (min-width: 760px) and (max-width: 1600px) {
-  body {
-    background-color: #43524f; }
-    body header nav {
-      align-items: center;
-      justify-content: space-around;
-      width: 100%;
-      background-color: #b1c7c3;
-      display: inline-block; }
-    body header ul {
-      list-style: none; }
-      body header ul li {
-        display: inline-block;
-        padding: 5px;
-        margin: 5px; }
   .videohome {
     background-image: url("../img/beer.mp4");
     background-repeat: no-repeat;
@@ -314,20 +315,6 @@
       background-position: left; } }
 
 @media (min-width: 360px) and (max-width: 760px) {
-  body {
-    background-color: #43524f; }
-    body header nav {
-      align-items: center;
-      justify-content: space-around;
-      width: 100%;
-      background-color: #b1c7c3;
-      display: inline-block; }
-    body header ul {
-      list-style: none; }
-      body header ul li {
-        display: inline-block;
-        padding: 5px;
-        margin: 5px; }
   .videohome {
     background-image: url("../img/beer.mp4");
     background-repeat: no-repeat;
@@ -389,21 +376,7 @@
     footer .redes {
       background-position: left; } }
 
-@media (min-width: 360px) and (max-width: 760px) and (min-width: 10px) and (max-width: 360px) {
-  body {
-    background-color: #43524f; }
-    body header nav {
-      align-items: center;
-      justify-content: space-around;
-      width: 100%;
-      background-color: #b1c7c3;
-      display: inline-block; }
-    body header ul {
-      list-style: none; }
-      body header ul li {
-        display: inline-block;
-        padding: 5px;
-        margin: 5px; }
+@media (min-width: 10px) and (max-width: 360px) {
   .videohome {
     background-image: url("../img/beer.mp4");
     background-repeat: no-repeat;
@@ -465,21 +438,7 @@
     footer .redes {
       background-position: left; } }
 
-@media (min-width: 360px) and (max-width: 760px) and (max-width: 10px) {
-  body {
-    background-color: #43524f; }
-    body header nav {
-      align-items: center;
-      justify-content: space-around;
-      width: 100%;
-      background-color: #b1c7c3;
-      display: inline-block; }
-    body header ul {
-      list-style: none; }
-      body header ul li {
-        display: inline-block;
-        padding: 5px;
-        margin: 5px; }
+@media (max-width: 10px) {
   .videohome {
     background-image: url("../img/beer.mp4");
     background-repeat: no-repeat;
@@ -541,8 +500,11 @@
     footer .redes {
       background-position: left; } }
 
-@media (min-width: 360px) and (max-width: 760px) {
-  /*  propiedades sobre nosotros*/
+ 
+
+  /*  propiedades sobre nosotros*/ 
+
+@media (min-width: 600px) and (max-width: 1600px) {
   .tiU {
     color: #1b521b;
     font-size: 32px; }
@@ -583,7 +545,51 @@
     width: 90vh;
     position: relative;
     left: 700px;
-    top: -330px; }
+    top: -330px; } }
+
+@media (min-width: 450px) and (max-width: 800px) {
+  .tiU {
+    color: #1b521b;
+    font-size: 32px; }
+  .tiP {
+    display: grid;
+    grid-template-columns: auto;
+    position: relative;
+    width: 600px;
+    height: 250px;
+    right: -650px;
+    top: -500px; }
+  .cerL {
+    position: relative;
+    height: 80vh;
+    width: 80vh;
+    bottom: -40px;
+    left: 1%; }
+  .tiD {
+    color: #2b2b8b;
+    text-align: left;
+    position: relative;
+    font-size: 32px; }
+  .tiT {
+    color: black;
+    font-size: 22px; }
+  .parrafo2 {
+    position: relative;
+    top: 20%; }
+  .tiC {
+    display: grid;
+    position: relative;
+    width: 600px;
+    height: -250px;
+    left: 30px;
+    top: -150px; }
+  .cerM {
+    height: 70vh;
+    width: 90vh;
+    position: relative;
+    left: 700px;
+    top: -330px; } }
+
   /*  propiedades sobre cerveza*/
   .padre {
     margin: 1em;
@@ -627,7 +633,8 @@
     grid-template-columns: repeat(1, 1 fr);
     grid-template-rows: repeat(2, auto);
     gap: 10px;
-    grid-template-areas: "gradientes" "footer";
+    grid-template-areas: "gradientes"
+ "footer";
     box-sizing: border-box;
     margin: 10px;
     font-family: quicksand;
@@ -649,4 +656,4 @@
     font-weight: 400px;
     font-size: 16px;
     font-size: 1rem;
-    line-height: 1.42857; } }
+    line-height: 1.42857; } 
